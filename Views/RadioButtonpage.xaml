@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="MyWPFUIBaseDemo.Views.RadioButtonpage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyWPFUIBaseDemo.Views"
+             xmlns:mywpf="http://schemas.mywpf.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" Background="Brown"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <RadioButton Margin="3" mywpf:ControlAttachPropertyHepler.FIconSize="18">男</RadioButton>
+            <RadioButton Margin="3" mywpf:ControlAttachPropertyHepler.FIconSize="20">女</RadioButton>
+            <RadioButton Margin="3" IsChecked="{x:Null}" mywpf:ControlAttachPropertyHepler.FIconSize="22">其他</RadioButton>
+            <RadioButton Margin="3" IsChecked="{x:Null}" mywpf:ControlAttachPropertyHepler.FIconSize="24">女</RadioButton>
+            <RadioButton Margin="3" IsChecked="{x:Null}" mywpf:ControlAttachPropertyHepler.FIconSize="26">女</RadioButton>
+            <RadioButton Margin="3" IsEnabled="False">我被禁用了</RadioButton>
+            <RadioButton Margin="3" IsEnabled="False" IsChecked="{x:Null}">我被禁用了</RadioButton>
+            <RadioButton Margin="3" IsChecked="True" mywpf:ControlAttachPropertyHepler.AllowsAnimation="{Binding IsChecked,RelativeSource={RelativeSource Self}}">旋转一下</RadioButton>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="18"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="20"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="22"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="24"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="26"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="30"></TextBlock>
+            <TextBlock Style="{StaticResource FIcon}" Text="&#xe65c;" FontSize="40"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <RadioButton Style="{StaticResource BoxRadioButton}" Margin="1">近3天</RadioButton>
+            <RadioButton Style="{StaticResource BoxRadioButton}" Margin="1">近7天</RadioButton>
+            <RadioButton Style="{StaticResource BoxRadioButton}" Margin="1">本月</RadioButton>
+            <RadioButton Style="{StaticResource BoxRadioButton}" Margin="1">自定义</RadioButton>
+            <RadioButton Style="{StaticResource BoxRadioButton}" Margin="1">2012.05.12-2015.12.14</RadioButton>
+
+        </StackPanel>
+    </StackPanel>
+</UserControl>
