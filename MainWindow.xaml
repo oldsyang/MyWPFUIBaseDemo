@@ -14,8 +14,11 @@
         <TabItem Header="RadioButton">
             <views:RadioButtonpage></views:RadioButtonpage>
         </TabItem>
-        <TabItem Header="MyButton">
-            <views:MyButtonpage></views:MyButtonpage>
+        <TabItem Header="Button">
+            <views:Buttonpage></views:Buttonpage>
+        </TabItem>
+        <TabItem Header="TextBox">
+            <views:TextBoxpage></views:TextBoxpage>
         </TabItem>
     </TabControl>
    

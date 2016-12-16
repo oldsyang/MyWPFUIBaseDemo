@@ -17,9 +17,9 @@ namespace MyWPFUIBaseDemo.Views
     /// <summary>
     /// MyButtonpage.xaml 的交互逻辑
     /// </summary>
-    public partial class MyButtonpage : UserControl
+    public partial class Buttonpage : UserControl
     {
-        public MyButtonpage()
+        public Buttonpage()
         {
             InitializeComponent();
         }
