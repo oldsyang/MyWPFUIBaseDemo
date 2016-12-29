@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFUIBaseDemo"
         xmlns:views="clr-namespace:MyWPFUIBaseDemo.Views"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        mc:Ignorable="d" ResizeMode="NoResize"
+        Title="MainWindow" Height="600" Width="1000">
     <TabControl>
         <TabItem Header="CheckBox">
             <views:CheckBoxpage></views:CheckBoxpage>
@@ -19,6 +19,12 @@
         </TabItem>
         <TabItem Header="TextBox">
             <views:TextBoxpage></views:TextBoxpage>
+        </TabItem>
+        <TabItem Header="Menu">
+            <views:Menupage></views:Menupage>
+        </TabItem>
+        <TabItem Header="WaittingBox">
+            <views:WaittingBoxpage></views:WaittingBoxpage>
         </TabItem>
     </TabControl>
    

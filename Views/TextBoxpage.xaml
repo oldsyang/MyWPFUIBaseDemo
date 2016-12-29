@@ -28,6 +28,8 @@
         <StackPanel>
             <TextBox mywpf:TextDigitalHelper.Count="10"  mywpf:TextDigitalHelper.InputTextType="Digital"></TextBox>
             <TextBox mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
+            <TextBox IsEnabled="False" mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
+            <TextBox IsEnabled="False" Style="{x:Null}">122323</TextBox>
             <TextBox >
                 <mywpf:ControlAttachPropertyHepler.RightContent>
                     <mywpf:MyImageButton FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont"  FontSize="20" Content="&#xe644;" VerticalAlignment="Center"

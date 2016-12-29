@@ -63,11 +63,17 @@
     <Compile Include="Views\Buttonpage.xaml.cs">
       <DependentUpon>Buttonpage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Menupage.xaml.cs">
+      <DependentUpon>Menupage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RadioButtonpage.xaml.cs">
       <DependentUpon>RadioButtonpage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TextBoxpage.xaml.cs">
       <DependentUpon>TextBoxpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WaittingBoxpage.xaml.cs">
+      <DependentUpon>WaittingBoxpage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -89,11 +95,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Menupage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\RadioButtonpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\TextBoxpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WaittingBoxpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
