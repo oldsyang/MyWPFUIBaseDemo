@@ -16,30 +16,32 @@
                 <Setter Property="BorderBrush" Value="#000000"></Setter>
                 <Setter Property="Background" Value="White"></Setter>
             </Style>
-            <UserControl x:Key="OpenFolderTemplate">
-                <mywpf:MyImageButton FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont"  Foreground="#f4ea2a" FontSize="20" Content="&#xe898;" VerticalAlignment="Center"
-                                        DataContext="{Binding RelativeSource={RelativeSource AncestorType=TextBox}}"
-                                         mywpf:ControlAttachPropertyHepler.IsOpenFolderButtonBehaviorEnabled="True"
-                                         Command="mywpf:ControlAttachPropertyHepler.OpenFolderCommand" 
-                                         CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=TextBox}}"></mywpf:MyImageButton>
-
-            </UserControl>
         </Grid.Resources>
-        <StackPanel>
-            <TextBox mywpf:TextDigitalHelper.Count="10"  mywpf:TextDigitalHelper.InputTextType="Digital"></TextBox>
-            <TextBox mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
-            <TextBox IsEnabled="False" mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
-            <TextBox IsEnabled="False" Style="{x:Null}">122323</TextBox>
-            <TextBox >
-                <mywpf:ControlAttachPropertyHepler.RightContent>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" mywpf:TextDigitalHelper.Count="10"  mywpf:TextDigitalHelper.InputTextType="Digital"></TextBox>
+            <TextBox Grid.Row="1" mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
+            <TextBox Grid.Row="2" IsEnabled="False" mywpf:ControlAttachPropertyHepler.Watermark="这是一水印文本"></TextBox>
+            <TextBox Grid.Row="3" IsEnabled="False" Style="{x:Null}">122323</TextBox>
+            <TextBox Grid.Row="4" >
+                <!--<mywpf:ControlAttachPropertyHepler.RightContent>
                     <mywpf:MyImageButton FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont"  FontSize="20" Content="&#xe644;" VerticalAlignment="Center"
                                                  mywpf:ControlAttachPropertyHepler.IsClearTextButtonBehaviorEnabled="True" Command="mywpf:ControlAttachPropertyHepler.ClearTextCommand" 
                                                  CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type TextBox}}}"></mywpf:MyImageButton>
 
-                </mywpf:ControlAttachPropertyHepler.RightContent>
+                </mywpf:ControlAttachPropertyHepler.RightContent>-->
             </TextBox>
-            <TextBox >
-                <mywpf:ControlAttachPropertyHepler.RightContent>
+            <TextBox Grid.Row="5">
+                <!--<mywpf:ControlAttachPropertyHepler.RightContent>
                     <Border>
                         <mywpf:MyImageButton FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont"  Foreground="#f4ea2a" FontSize="20" Content="&#xe898;" VerticalAlignment="Center"
                                         DataContext="{Binding RelativeSource={RelativeSource AncestorType=TextBox}}"
@@ -49,25 +51,26 @@
                                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=TextBox}}"
                                          ></mywpf:MyImageButton>
                     </Border>
-                </mywpf:ControlAttachPropertyHepler.RightContent>
-             
+                </mywpf:ControlAttachPropertyHepler.RightContent>-->
+
             </TextBox>
-            <TextBox mywpf:ControlAttachPropertyHepler.Watermark="请输入姓名">
-                <mywpf:ControlAttachPropertyHepler.LeftContent>
+            <TextBox Grid.Row="6" >
+                <!--<mywpf:ControlAttachPropertyHepler.LeftContent>
                     <TextBlock FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont" Text="&#xe60a;" Foreground="Gray"  VerticalAlignment="Center" FontSize="20"></TextBlock>
-                </mywpf:ControlAttachPropertyHepler.LeftContent>
+                </mywpf:ControlAttachPropertyHepler.LeftContent>-->
             </TextBox>
-            <TextBox mywpf:ControlAttachPropertyHepler.Watermark="请输入密码">
-                <mywpf:ControlAttachPropertyHepler.LeftContent>
+            <TextBox Grid.Row="7" mywpf:ControlAttachPropertyHepler.Watermark="请输入密码">
+                <!--<mywpf:ControlAttachPropertyHepler.LeftContent>
                     <TextBlock FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont" Text="&#xe604;" Foreground="Gray" VerticalAlignment="Center" FontSize="20"></TextBlock>
                 </mywpf:ControlAttachPropertyHepler.LeftContent>
                 <mywpf:ControlAttachPropertyHepler.RightContent>
                     <mywpf:MyImageButton FontFamily="pack://application:,,,/MyWPFUIBaseDemo;component/FontFamily/#myuifont"  Foreground="Black" FontSize="20" Content="&#xe63f;" VerticalAlignment="Center"
                                          Click="ButtonBase_OnClick" VerticalContentAlignment="Center"></mywpf:MyImageButton>
-                </mywpf:ControlAttachPropertyHepler.RightContent>
+                </mywpf:ControlAttachPropertyHepler.RightContent>-->
 
-                
+
             </TextBox>
-        </StackPanel>
+        </Grid>
+      
     </Grid>
 </UserControl>

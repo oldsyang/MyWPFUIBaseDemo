@@ -26,6 +26,9 @@
         <TabItem Header="WaittingBox">
             <views:WaittingBoxpage></views:WaittingBoxpage>
         </TabItem>
+        <TabItem Header="CommandBehavior">
+            <views:CommandBehaviorpage></views:CommandBehaviorpage>
+        </TabItem>
     </TabControl>
    
 </Window>

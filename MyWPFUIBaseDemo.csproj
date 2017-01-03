@@ -57,11 +57,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\CommandBehaviorpageViewModel.cs" />
     <Compile Include="Views\CheckBoxpage.xaml.cs">
       <DependentUpon>CheckBoxpage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Buttonpage.xaml.cs">
       <DependentUpon>Buttonpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommandBehaviorpage.xaml.cs">
+      <DependentUpon>CommandBehaviorpage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Menupage.xaml.cs">
       <DependentUpon>Menupage.xaml</DependentUpon>
@@ -92,6 +96,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Buttonpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CommandBehaviorpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

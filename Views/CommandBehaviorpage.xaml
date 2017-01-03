@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="MyWPFUIBaseDemo.Views.CommandBehaviorpage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyWPFUIBaseDemo.Views"
+             xmlns:mywpf="http://schemas.mywpf.com/wpf/xaml/toolkit"
+             xmlns:viewModels="clr-namespace:MyWPFUIBaseDemo.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Border Background="Yellow" Width="350" Margin="0,0,10,0" Height="35" CornerRadius="2"
+                        mywpf:CommandBehavior.Event="MouseDown" 
+                        mywpf:CommandBehavior.Command="{Binding MouseDownCommand}"
+                        mywpf:CommandBehavior.CommandParameter="MouseDown">
+            <TextBlock Text="鼠标点击我"/>
+        </Border>
+    </Grid>
+    <UserControl.DataContext>
+        <viewModels:CommandBehaviorpageViewModel x:Name="vm"></viewModels:CommandBehaviorpageViewModel>
+    </UserControl.DataContext>
+</UserControl>
